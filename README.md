@@ -1,5 +1,5 @@
 # containerized_classifier_api
-A simple classifier model (random forest) API deployed using docker
+A simple classifier model (random forest train in python using sklearn) API deployed using docker
 
 ## About each file:
 * **Dockerfile** --- docker file used to generate a docker image that will run the API
