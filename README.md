@@ -27,15 +27,7 @@ docker build -t [name you want your image to be called] .
 ##### Note: If you get the error "Get "https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)" try to follow the solutions outlined here https://stackoverflow.com/questions/48056365/error-get-https-registry-1-docker-io-v2-net-http-request-canceled-while-b
 
 ### Run the docker image:
-If you are using docker for windows, go to the images tab and check if the image has successfully been created:
-
-![image](https://user-images.githubusercontent.com/77715245/154616561-e87489b9-e739-4c11-97f8-fc5dce93a5f7.png)
-
-Once it is there, go to the containers/apps tab and run the image:
-
-![image](https://user-images.githubusercontent.com/77715245/154616763-84dddfd4-8583-4830-b55b-6d8bf6ad9f05.png)
-
-Alternatively, if you are using docker on linux, run the following command:
+Run the following commands:
 ```bash
 # Check whether image was generated
 docker images
