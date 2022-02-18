@@ -11,6 +11,10 @@ A simple classifier model (random forest trained in python using sklearn) API de
 * **requirements.txt** --- list of all dependencies used to build the docker image
 
 ## How to deploy this API 
+
+### Pre-requisite
+Make sure that docker is installed on your machine
+
 ### Clone the directory
 Go to the directory where you want to create your project and run:
 
@@ -22,7 +26,7 @@ $ git clone https://github.com/Jeon-san/containerized_classifier_api
 cd to the project folder, start docker in terminal, and run the following command:
 
 ```bash
-docker build -t [name you want your image to be called] .
+$ docker build -t [name you want your image to be called] .
 ```
 ##### Note: If you get the error "Get "https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)" try to follow the solutions outlined here https://stackoverflow.com/questions/48056365/error-get-https-registry-1-docker-io-v2-net-http-request-canceled-while-b
 
@@ -30,26 +34,26 @@ docker build -t [name you want your image to be called] .
 Run the following commands:
 ```bash
 # Check whether image was generated
-docker images
+$ docker images
 # Run docker image
-docker run -d -p 8000:8000 [image name]
+$ docker run -d -p 8000:8000 [image name]
 ```
 
-### Check whether the API is running by running, you should be able to see a container and its details:
+### Check whether the API is running by using the command below, you should be able to see a container and its details:
 ```bash
-docker container ls
+$ docker container ls
 ```
 
 ## Using the API
 ### Location of API
-The API could be accessed at http://127.0.0.1:8000/predict/ 
+The API can be accessed at http://127.0.0.1:8000/predict/ 
 
 ### Querying the API
 A sample of a request URL is:
 http://127.0.0.1:8000/predict/?contract=Month-to-month&dependents=Yes&deviceprotection=Yes&gender=Male&internetservice=Fiber%20optic&multiplelines=Yes&onlinebackup=Yes&onlinesecurity=Yes&paperlessbilling=Yes&partner=Yes&paymentmethod=Electronic%20check&phoneservice=Yes&seniorcitizen=Yes&streamingmovies=Yes&streamingtv=Yes&techsupport=Yes&tenure=3&monthlycharges=35&totalcharges=686
 
 ### Documentation
-Documentation of the query variables could be found at **127.0.0.1:8000/docs**
+Documentation of the query variables could be found at **http://127.0.0.1:8000/docs**
 
 ### Model performance
 The model performance is shown below:
@@ -65,7 +69,7 @@ The confusion matrix:
 ## Unit testing
 In order to test weather the API is working correctly, install pytest if you haven't already and run the command in the project directory:
 ```bash
-pytest
+$ pytest
 ```
 
 
