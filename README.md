@@ -7,7 +7,7 @@ A simple classifier model (random forest trained in python using sklearn) API de
 * **clean_data.py** --- python script to process the API input data from requests, the output will be fed to the random forest to make predictions
 * **model.py** --- script that was used to train the random forest model
 * **main.py** --- FastAPI script with a simple GET method
-* **test_main.py** --- pytest unit test script (run the command "pytest" while in this directory to test API)
+* **test_main.py** --- pytest unit test script (run the command "pytest" while in this directory to the test API)
 * **requirements.txt** --- list of all dependencies used to build the docker image
 
 ## How to deploy this API 
