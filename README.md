@@ -49,6 +49,9 @@ docker container ls
 ```
 
 ## Using the API
+### Location of API
+The API could be accessed at http://127.0.0.1:8000/predict/ 
+
 ### Querying the API
 A sample of a request URL is:
 http://127.0.0.1:8000/predict/?contract=Month-to-month&dependents=Yes&deviceprotection=Yes&gender=Male&internetservice=Fiber%20optic&multiplelines=Yes&onlinebackup=Yes&onlinesecurity=Yes&paperlessbilling=Yes&partner=Yes&paymentmethod=Electronic%20check&phoneservice=Yes&seniorcitizen=Yes&streamingmovies=Yes&streamingtv=Yes&techsupport=Yes&tenure=3&monthlycharges=35&totalcharges=686
