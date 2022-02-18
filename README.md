@@ -13,7 +13,8 @@ A simple classifier model (random forest trained in python using sklearn) API de
 ## How to deploy this API 
 
 ### Pre-requisite
-Make sure that docker is installed on your machine
+* Make sure that docker is installed on your machine
+* You need to have python 3 installed (if you want to do the unit test)
 
 ### Clone the directory
 Go to the directory where you want to create your project and run:
@@ -67,7 +68,7 @@ The confusion matrix:
 
 
 ## Unit testing
-In order to test weather the API is working correctly, install pytest if you haven't already and run the command in the project directory:
+In order to test whether the API is working correctly, install pytest if you haven't already and run the command in the project directory:
 ```bash
 $ pytest
 ```
